@@ -14,8 +14,14 @@
     width:auto;
     font-style: italic;
     
-   
     
+}
+a{
+    color:rgb(97, 163, 221);
+    padding-inline: 10px;
+    position: relative;
+   
+
 }
 nav img{
     margin-right: auto;
@@ -31,7 +37,7 @@ img{
     width:100%;
 }
 
-li{
+ul{
     display: inline-flex;
     margin:auto;
     color:white;

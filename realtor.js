@@ -19,9 +19,9 @@ fetch("http://localhost:3000/houses",)
             card.classList.add("card");
             card.innerHTML +=`
             <img src="${pic}"style="width:300px; height:250px;" />
-            Price: ${cost}
-            Address: ${local}
-            Description: ${about}
+            <h5>Price: ${cost}</h5>
+            <h5>Address: ${local}</h5>
+            <h5>Description: ${about}</h5>
 
             `
             character.appendChild(card)

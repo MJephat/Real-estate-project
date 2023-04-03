@@ -1,19 +1,43 @@
-.navbar{
-    background-color:white;
-    height:auto;
-    width:auto;
-    font-style: italic;
-}
+
+.logo{
+    font-size: 50px;
+    color:	#8c321a;
+    text-align: left;
+    line-height: 100px;
+    font-weight: bold;
+    }
 
 .nav{
-    background-color: aqua;
+    background-color:black;
+    height: 40px;
+    height:60px;
+    width:auto;
+    font-style: italic;
+    
+   
+    
 }
+nav img{
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+    display: block;    
+    width:100px ;
+    height: 80px;
+}
+
+img{
+    height: 650px;
+    width:100%;
+}
+
 li{
     display: inline-flex;
     margin:auto;
-    color:blue;
-    float:
+    color:white;
+    float: left;
 }
+
 
 .card {
     border: 1px solid #ccc;

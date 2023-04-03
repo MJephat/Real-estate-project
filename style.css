@@ -1,0 +1,29 @@
+.navbar{
+    background-color:white;
+    height:auto;
+    width:auto;
+    font-style: italic;
+}
+
+.nav{
+    background-color: aqua;
+}
+li{
+    display: inline-flex;
+    margin:auto;
+    color:blue;
+    float:
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(212, 214, 222, 0.3);
+    width: 150px;
+    height: 200px;
+    background-color: rgb(198, 196, 200);
+    display: inline-table;
+  }
+

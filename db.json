@@ -4,70 +4,70 @@
         "image_url": "https://media.istockphoto.com/id/1398061041/photo/roof-shingles-with-garret-house-on-top-of-the-house-dark-asphalt-tiles-on-the-roof-background.jpg?s=1024x1024&w=is&k=20&c=cfMUR5jEY7hcZcjOGV5HrwXXwmK6O38WizhLSa_TEqM=",
         "price": 2500000,
         "address": "kileleshwa",
-        "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+        "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood."
 
      },
 
      {
       "id":"2",
         "image_url": "https://media.istockphoto.com/id/1415886888/photo/freshly-painted-craftsman-bungalow-house.jpg?s=1024x1024&w=is&k=20&c=RyhWiVE6cwqI2FBT1Ato97Jl7xrnHmvJolNrD2GA-rk=",
-        "price": 3500000,
+        "price": 3600000,
         "address": "Kamulu estate",
-        "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+        "description": "modern home,3 bedroom and a front yard. Close to parks and schools."
 
      },
 
      {
       "id":"3",
         "image_url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "price": 500000,
+        "price":8650000,
         "address": "Kitengela, kajiado",
-        "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+        "description": "Luxurious house, pool, nice balcony, 1 floor house."
 
      },
 
      {
       "id":"4",
         "image_url": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "price": 750000,
-        "address": "Runda Valley",
-        "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+        "price": 42000000,
+        "address": "Ruai",
+        "description": "Fully furnished home in a quiet neighborhood. Close to parks and schools."
 
      },
 
      {
       "id":"5",
       "image_url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
-      "price": 750000,
-      "address": "123 Main Street",
-      "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+      "price": 10000000,
+      "address": "Runda, Nairobi",
+      "description": "pool, 12 bedroom,conferencing room, parking enough for 6 cars."
 
      },
 
      {
       "id":"6",
       "image_url": "https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 750000,
-      "address": "123 Main Street",
-      "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+      "price": 2600000,
+      "address": "Wangigi,Kiambu",
+      "description": "Humble home with ample compound for kids play time."
 
      },
 
      {
       "id":"7",
       "image_url": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-      "price": 750000,
-      "address": "123 Main Street",
-      "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+      "price": 10200000,
+      "address": "Lamu, coast",
+      "description": "Modern design, 2 floor house and spacious.All white paint."
 
      },
 
      {
       "id":"8",
       "image_url": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": 750000,
-      "address": "123 Main Street",
-      "description": "Charming 3-bedroom, 2-bath home in a quiet neighborhood. Close to parks and schools."
+      "price": 2100000,
+      "address": "Bahati, nakuru",
+      "description": "Simple and classy home in a quiet neighborhood. Nice compound."
 
      }
 

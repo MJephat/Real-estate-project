@@ -18,9 +18,9 @@
     <nav>
          <ul >
             <img src="images/logo.png" alt="Real estate" style ="height:55px; width:55px" ></img>
-            <a href=""><i class="fa fa-home"></i>Home</a>
+           
             <!-- <a href=""><i class="fa fa-building"></i>properties</a> -->
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button class="dropbtn">properties
                   <i class="fa fa-caret-down"></i>
                 </button>
@@ -31,9 +31,9 @@
                   <a href="#">sell property</a>
 
                 </div>
-              </div>
+              </div> -->
             <!-- <a href=""><i class="fa fa-tv"></i>media</a> -->
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button class="dropbtn">media
                   <i class="fa fa-caret-down"></i>
                 </button>
@@ -42,10 +42,12 @@
                   <a href="#">Broadcast</a>
                   <a href="#">News feed</a>
                 </div>
-              </div>
+              </div> -->
+            <a href=""><i class="fa fa-road"></i>feedback</a>
             <a href=""><i class="fa fa-briefcase"></i>about us</a>
             <a href=""><i class="fa fa-phone"></i>contact us</a>
-            <a href=""><i class="fa fa-road"></i>feedback</a>
+            <a href=""><i class="fa fa-home"></i>Home</a>
+           
 
         </ul>
     </nav>
@@ -89,21 +91,21 @@
     </p>
 </div>
 <div class="card" id="info"> 
-<form id="form">
+  <h5>Realtor Agent Form</h5>
+	<form action="submit_form.php" method="post">
+		<label>Name: <input type="text" name="name" required></label><br>
+		<label>Email: <input type="email" name="email" required></label><br>
+		<label>Phone: <input type="tel" name="phone" required></label><br>
+		<label>Property Type: 
+			<select name="property-type">
+				<option value="house">House</option>
+				<option value="condo">Condo</option>
+				<option value="townhouse">bungalow</option>
+			</select>
+		</label><br>
+		<input type="submit" value="Submit" style="background-color: rgb(137, 140, 188);">
+	</form>
 
-          
-    <h3>contact our agent  <i class="fa fa-phone" style ="color:green; width:45px; height: 75px; float:right;"> </i> </h3>  
-    <input name = "first name"type="text" placeholder ="firstname">
-    <input name = "second name"type="text" placeholder ="secondname">
-    <input name = "email"type="text" placeholder ="email">
-    <input name = "phone number"type="number" placeholder ="phone number">
-    <input name = "decription"type="text" placeholder ="description">
-    <input name = "comment"type="text" placeholder ="comment" >
-
-
-    <button type="submit" style="background:green">Submit</button>
-    </form>
-    </div>
 </div>
     
 </div>
@@ -119,8 +121,8 @@
 <!-- footer div -->
     <footer>
         <div class="footer-content">
-            <h3>realtor footer</h3>
-           
+            <h3>Realtor</h3>
+           <p>Find your dream home with us</p>
             <ul class=" socials">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>

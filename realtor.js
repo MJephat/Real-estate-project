@@ -21,7 +21,7 @@ fetch("http://localhost:3000/houses",)
             <img src="${pic}"style="width:300px; height:250px;" />
             <h5>Price: ${cost}</h5>
             <h5>Address: ${local}</h5>
-            <h5>Description: ${about}</h5>
+            Description: ${about}
 
             `
             character.appendChild(card)

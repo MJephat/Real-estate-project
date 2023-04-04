@@ -28,6 +28,10 @@ fetch("http://localhost:3000/houses",)
 
             }
 
-    });
+    })
+
+
+    // filter function
+    
 
 

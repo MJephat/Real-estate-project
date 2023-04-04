@@ -20,8 +20,30 @@
         <ul >
             <img src="images/logo.png" alt="Real estate" style ="height:55px; width:55px" ></img>
             <a href=""><i class="fa fa-home"></i>Home</a>
-            <a href=""><i class="fa fa-building"></i>properties</a>
-            <a href=""><i class="fa fa-tv"></i>media</a>
+            <!-- <a href=""><i class="fa fa-building"></i>properties</a> -->
+            <div class="dropdown">
+                <button class="dropbtn">properties
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">sold out</a>
+                  <a href="#">on sale</a>
+                  <a href="#">buy property</a>
+                  <a href="#">sell property</a>
+
+                </div>
+              </div>
+            <!-- <a href=""><i class="fa fa-tv"></i>media</a> -->
+            <div class="dropdown">
+                <button class="dropbtn">media
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Blogs</a>
+                  <a href="#">Broadcast</a>
+                  <a href="#">News feed</a>
+                </div>
+              </div>
             <a href=""><i class="fa fa-briefcase"></i>about us</a>
             <a href=""><i class="fa fa-phone"></i>contact us</a>
             <a href=""><i class="fa fa-road"></i>feedback</a>
@@ -29,44 +51,57 @@
         </ul>
     </nav>
     </div>
-<div>
-    <img src="images/stephanie-klepacki--Mw2LM3v9Zs-unsplash.jpg" alt="home bg" >
+
+
+<div class = "Home"style="background-image:url(images/realestate.jpg);">
+    <input id ="search"name = "search" placeholder ="search">
+ 
+
+    
+    
+</div>
+
+
 <div class="card" id="info"> 
     <h3>Our committment</h3>
-    <p> Work can be an escape. But when times are tough, working harder isn’t 
-        always working smarter. Family and friends are important — they center us, and 
-        they also count on us to be there. When work takes up all of your time, no one gets 
-        the support they need.
-        Ask yourself: Am I making the time for friends and family? Are the relationships 
-        I have with those closest to me strong? Am I emotionally available even if I’m not 
-        physically able to be there? Remember, friends and family are also referral resources.</p>
-</div>
+    <p>At our real estate firm, our commitment is to provide our clients with 
+        exceptional service and expertise to ensure a successful real estate transaction.
+         We are dedicated to putting our clients first and providing personalized attention
+          to their unique needs. our core values are integrity, professionalism, communication
+        and innovation.We strive to exceed our clients' expectations and help them achieve their
+         real estate goals. Contact us today to experience our commitment firsthand.</p> 
+    </div>
 
 <div class="card" id="info"> 
     <h3>Our service</h3>
-    <p> Work can be an escape. But when times are tough, working harder isn’t 
-        always working smarter. Family and friends are important — they center us, and 
-        they also count on us to be there. When work takes up all of your time, no one gets 
-        the support they need.
-        Ask yourself: Am I making the time for friends and family? Are the relationships 
-        I have with those closest to me strong? Am I emotionally available even if I’m not 
-        physically able to be there? Remember, friends and family are also referral resources.</p>
+    
+    <p> As a real estate company, we offer a comprehensive range of services designed to help 
+        our clients achieve their real estate goals. From buying and selling properties to 
+        property management and investment services, we have the expertise and experience to 
+        meet all your real estate needs.Overall, our services are designed to meet all your real 
+        estate needs and help you achieve your goals. Contact us today to learn more about how 
+        we can help you with your real estate needs.</p>
 </div>
 
 <div class="card" id="info"> 
-    <h3>About us</h3>
-    <p> Work can be an escape. But when times are tough, working harder isn’t 
-        always working smarter. Family and friends are important — they center us, and 
-        they also count on us to be there. When work takes up all of your time, no one gets 
-        the support they need.
-        Ask yourself: Am I making the time for friends and family? Are the relationships 
-        I have with those closest to me strong? Am I emotionally available even if I’m not 
-        physically able to be there? Remember, friends and family are also referral resources.</p>
+    <h3></i>About us</h3>
+   
+
+    <p> At our company, we have a team of experienced and knowledgeable real 
+        estate agents who are dedicated to helping clients achieve their goals. 
+        Whether you're buying your first home, selling a property, or looking to 
+        invest in real estate, our agents will work closely with you to understand 
+        your unique needs and help you make informed decisions.Overall, our company is
+         dedicated to helping clients achieve their real estate goals, and we believe
+          that our commitment to excellence sets us apart in the industry. 
+
+    </p>
 </div>
 <div class="card" id="info"> 
 <form id="form">
 
-     <h3>Agent</h3>  
+          
+    <h3>contact our agent  <i class="fa fa-phone" style ="color:green; width:45px; height: 75px; float:right;"> </i> </h3>  
     <input name = "first name"type="text" placeholder ="firstname">
     <input name = "second name"type="text" placeholder ="secondname">
     <input name = "email"type="text" placeholder ="email">

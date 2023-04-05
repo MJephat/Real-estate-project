@@ -33,6 +33,7 @@
 /*  div */
 .box{
     background-color:#7B8FA1;
+
 }
 
 .com{
@@ -79,7 +80,7 @@ img{
     margin: 22px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(212, 214, 222, 0.3);
-    width: 150px;
+    width: 22%;
     height: 150px;
     background-color: rgb(198, 196, 200);
     display: inline-table;
@@ -250,3 +251,45 @@ input[type=text]{
     cursor:pointer;
     color:#202580
 }
+
+/* filter buttons */
+.filter-pro{
+   padding-top: 30px;
+   display:flex;
+   /* width: 80%; */
+   margin: auto;
+   justify-content: space-between;
+}
+#hom,#onsale,#vacation, .right-pro button{
+  background-color: #b59e9e;
+  color: #FFFFFF;
+  font-size: 1.0 rem;
+  font-weight: 700px;
+  padding: 10px 20px;
+
+  border: 2px solid transparent;
+  border-radius: 20px;
+  cursor:pointer;
+  
+}
+#hom:hover{
+    background-color: #fff;
+    color:rgb(97, 163, 221);
+    border-color: #424040;
+}
+#onsale:hover{
+    background-color: #fff;
+    color:rgb(97, 163, 221);
+    border-color: #424040;
+}
+
+#vacation:hover{
+    background-color: #fff;
+    color:rgb(97, 163, 221);
+    border-color: #424040;
+}
+
+.left-pro{
+    margin-right: 20px;
+}
+

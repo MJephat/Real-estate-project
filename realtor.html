@@ -14,6 +14,7 @@
 <body>
 
 <!-- navahation bar and drop down menu -->
+<div id="home"></div>
     <div class="nav">
     <nav>
          <ul >
@@ -43,10 +44,10 @@
                   <a href="#">News feed</a>
                 </div>
               </div> -->
-            <a href=""><i class="fa fa-road"></i>feedback</a>
-            <a href=""><i class="fa fa-briefcase"></i>about us</a>
-            <a href=""><i class="fa fa-phone"></i>contact us</a>
-            <a href=""><i class="fa fa-home"></i>Home</a>
+            <!-- <a href=""><i class="fa fa-road"></i>feedback</a> -->
+            <a href="#property"><i class="fa fa-building"></i>property</a>
+            <a href="#footer"><i class="fa fa-briefcase"></i>about us</a>
+            <a href="#home"><i class="fa fa-home"></i>Home</a>
            
 
         </ul>
@@ -110,17 +111,31 @@
 </div>
     
 </div>
-
+</div>
 
 <!-- js displaying div -->
+<div id="property">
     <div class="box">
         
         <h2> RELATED HOUSES</h2>
+        <div class="filter-pro">
+          <div class="left-pro">
+            <button id="vacation">vacation</button>
+            <button id="onsale">on sale</button>
+            <button id="hom">home</button>
+          </div>
+        <div class="right-pro">
+          <button id="filter"><i class="fa fa-filter"></i></button>
+        </div>
+
+        </div>
+        
+
       
     </div>
-
+    </div>
 <!-- footer div -->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <h3>Realtor</h3>
            <p>Find your dream home with us</p>

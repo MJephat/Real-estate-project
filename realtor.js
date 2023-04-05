@@ -1,5 +1,6 @@
+document.addEventListener('DOMContentLoaded', function(){
 
-fetch("http://localhost:3000/houses",)
+    fetch("http://localhost:3000/houses",)
     .then(res => res.json())
     .then(data => {
         
@@ -18,7 +19,7 @@ fetch("http://localhost:3000/houses",)
             const card = document.createElement("div");
             card.classList.add("card");
             card.innerHTML +=`
-            <img src="${pic}"style="width:300px; height:250px;" />
+            <img src="${pic}"style="width:100%; height:210px;" />
             <h5>Price: ${cost}</h5>
             <h5>Address: ${local}</h5>
             Description: ${about}</br>
@@ -45,8 +46,7 @@ fetch("http://localhost:3000/houses",)
     // button clicked
     let clicked = false;
     
-    likeButton.addEventListener("click", tangle=>{
-        function tangle(){
+    likeButton.addEventListener("click", function(){
         if (!clicked){
             clicked =true;
             likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
@@ -57,7 +57,13 @@ fetch("http://localhost:3000/houses",)
             likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
             count.textContent++;
         }
-       }
+       })
     });
+
+
+
+
+
+
 
 

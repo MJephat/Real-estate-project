@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function(){
 let form = document.getElementById("weka")
 
 form.addEventListener('submit',function(event){
-    event.preventDefault()// prevents the form fromzauto submitting.
+     event.preventDefault()// prevents the form from auto submitting.
     
     let jina = document.getElementById("name").value
     console.log(jina);

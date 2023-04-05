@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    function alertFunction(){
-        alert("submitted")
-    }
-
-
     fetch("http://localhost:3000/houses",)
     .then(res => res.json())
     .then(data => {
@@ -30,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function(){
             Description: ${about}
             </br>
         
-            <i class="fa fa-star">
-            <i class="fa fa-star">
-            <i class="fa fa-star">
-            <i class="fa fa-star">
-            <i class="fa fa-star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
             </br>
             <button class="like_btn">
             <span id="icon"><i class="fa fa-heart"></i></span>

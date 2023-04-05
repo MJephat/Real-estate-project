@@ -1,4 +1,5 @@
 /* nav bar styling */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 .nav{
     background-color:black;
     height:59px;
@@ -243,5 +244,9 @@ input[type=text]{
     /* color:aliceblue; */
 }
 
-/* SLIDE SHOW STYLING */
-
+.like_btn{
+    background:rgb(117, 117, 181);
+    font-size: 15px;
+    cursor:pointer;
+    color:#202580
+}

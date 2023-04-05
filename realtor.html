@@ -93,10 +93,10 @@
 </div>
 <div class="card" id="info"> 
   <h5>Realtor Agent Form</h5>
-	<form action="submit_form.php" method="post">
-		<label>Name: <input type="text" name="name" required></label><br>
-		<label>Email: <input type="email" name="email" required></label><br>
-		<label>Phone: <input type="tel" name="phone" required></label><br>
+	<form id="weka">
+		<label>Name: <input type="text" id="name" required></label><br>
+		<label>Email: <input type="email" id="email" required></label><br>
+		<label>Phone: <input type="tel" id="phone" required></label><br>
 		<label>Property Type: 
 			<select name="property-type">
 				<option value="house">House</option>
@@ -138,7 +138,14 @@
     <footer id="footer">
         <div class="footer-content">
             <h3>Realtor</h3>
-           <p>Find your dream home with us</p>
+           <p>Find your dream home with us</p></br>
+           
+          <ul> 
+            <li><p>Terms and conditions</p></li>
+            <li><p>privacy policy</p></li>
+            <li><p>cookie policy</p></li>
+          </ul>
+        
             <ul class=" socials">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>

@@ -293,3 +293,8 @@ input[type=text]{
     margin-right: 20px;
 }
 
+ ul #1 li, ul #2 li{
+    text-align: center;
+    display:inline-flex ;
+    float: left;
+}

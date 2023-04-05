@@ -39,31 +39,41 @@ document.addEventListener('DOMContentLoaded', function(){
     // Like button function.
     // grabbing our elements.
     
-    let likeButton = document.getElementsByClassName(".like_btn"); 
-    let likeIcon = document.getElementById("#icon");
-    let count = document.getElementById("#count");
+    // let likeButton = document.getElementsByClassName(".like_btn"); 
+    // let likeIcon = document.getElementById("#icon");
+    // let count = document.getElementById("#count");
 
-    // button clicked
-    let clicked = false;
+    // // button clicked
+    // let clicked = false;
     
-    likeButton.addEventListener("click", function(){
-        if (!clicked){
-            clicked =true;
-            likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
-            count.textContent++;
-        }
-        else{
-            clicked = false;
-            likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
-            count.textContent++;
-        }
-       })
-    });
+    // likeButton.addEventListener("click", function(){
+    //     if (!clicked){
+    //         clicked =true;
+    //         likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
+    //         count.textContent++;
+    //     }
+    //     else{
+    //         clicked = false;
+    //         likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
+    //         count.textContent++;
+    //     }
+    //    })
+    // });
 
 
+// submitting the form event.
+let form = document.getElementById("weka")
 
+form.addEventListener('submit',function(event){
+    event.preventDefault()// prevents the form fromzauto submitting.
+    
+    let jina = document.getElementById("name").value
+    console.log(jina);
+    let eMail = document.getElementById("email").value
+    console.log(eMail);
+    let Phone = document.getElementById("phone").value
+    console.log(Phone);
 
+})
 
-
-
-
+});

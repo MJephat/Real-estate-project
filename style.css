@@ -304,7 +304,8 @@ input[type=text]{
     background:rgb(117, 117, 181);
     font-size: 15px;
     cursor:pointer;
-    color:#202580
+    color:#202580;
+    float:right;
 }
 
 /* filter buttons */

@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+    function alertFunction(){
+        alert("submitted")
+    }
+
+
     fetch("http://localhost:3000/houses",)
     .then(res => res.json())
     .then(data => {
@@ -22,7 +27,15 @@ document.addEventListener('DOMContentLoaded', function(){
             <img src="${pic}"style="width:100%; height:210px;" />
             <h5>Price: ${cost}</h5>
             <h5>Address: ${local}</h5>
-            Description: ${about}</br>
+            Description: ${about}
+            </br>
+        
+            <i class="fa fa-star">
+            <i class="fa fa-star">
+            <i class="fa fa-star">
+            <i class="fa fa-star">
+            <i class="fa fa-star">
+            </br>
             <button class="like_btn">
             <span id="icon"><i class="fa fa-heart"></i></span>
             <span id="count">0</span> Like
@@ -34,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function(){
             }
 
     })
+
+     
 
 
     // Like button function.
@@ -73,6 +88,8 @@ form.addEventListener('submit',function(event){
     console.log(eMail);
     let Phone = document.getElementById("phone").value
     console.log(Phone);
+
+    form.reset();
 
 })
 

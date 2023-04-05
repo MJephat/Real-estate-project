@@ -1,3 +1,9 @@
+
+function alertFunction(){
+    alert("submitted successfully")
+}
+
+
 document.addEventListener('DOMContentLoaded', function(){
 
     fetch("http://localhost:3000/houses",)
@@ -31,8 +37,9 @@ document.addEventListener('DOMContentLoaded', function(){
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             </br>
+
             <button class="like_btn">
-            <span id="icon"><i class="fa fa-heart"></i></span>
+            <span class="fa fa-heart icon"></i></span>
             <span id="count">0</span> Like
             </button>
 
@@ -43,32 +50,31 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 
-     
-
-
-    // Like button function.
+     // Like button function.
     // grabbing our elements.
     
-    // let likeButton = document.getElementsByClassName(".like_btn"); 
-    // let likeIcon = document.getElementById("#icon");
-    // let count = document.getElementById("#count");
+    let likeButton = document.getElementsByClassName(".like_btn").textContent 
+    let likeIcon = document.getElementsByClassName(".icon").textContent
+    let likeCount = document.querySelector("#count").textContent;
 
-    // // button clicked
-    // let clicked = false;
+    // button clicked
+    let clicked = false;
     
-    // likeButton.addEventListener("click", function(){
-    //     if (!clicked){
-    //         clicked =true;
-    //         likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
-    //         count.textContent++;
-    //     }
-    //     else{
-    //         clicked = false;
-    //         likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
-    //         count.textContent++;
-    //     }
-    //    })
-    // });
+    likeButton.addEventListener("click", ()=>{
+        
+        console.log("like button clicked");
+        if (!clicked){
+            clicked =true;
+            likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
+            likeCount.textContent+=1;
+        }
+        else{
+            clicked = false;
+            likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
+            likeCount.textContent+=1;
+        }
+       })
+    });
 
 
 // submitting the form event.
@@ -84,8 +90,10 @@ form.addEventListener('submit',function(event){
     let Phone = document.getElementById("phone").value
     console.log(Phone);
 
-    form.reset();
+    // form.reset();
 
 })
 
-});
+
+
+// console.log(alertFunction());

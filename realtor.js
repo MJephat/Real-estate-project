@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 
+
      // Like button function.
     // grabbing our elements.
     
@@ -57,24 +58,31 @@ document.addEventListener('DOMContentLoaded', function(){
     let likeIcon = document.getElementsByClassName(".icon").textContent
     let likeCount = document.querySelector("#count").textContent;
 
+    // Heart Like counts
+var clicks = 0;
+function onClick() 
+{
+    clicks += 1;
+    document.querySelector(".card").innerHTML = clicks;
+};
     // button clicked
-    let clicked = false;
+    // let clicked = false;
     
-    likeButton.addEventListener("click", ()=>{
+    // likeButton.addEventListener("click", ()=>{
         
-        console.log("like button clicked");
-        if (!clicked){
-            clicked =true;
-            likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
-            likeCount.textContent+=1;
-        }
-        else{
-            clicked = false;
-            likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
-            likeCount.textContent+=1;
-        }
-       })
-    });
+    //     console.log("like button clicked");
+    //     if (!clicked){
+    //         clicked =true;
+    //         likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
+    //         likeCount.textContent+=1;
+    //     }
+    //     else{
+    //         clicked = false;
+    //         likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
+    //         likeCount.textContent+=1;
+    //     }
+    //    })
+    // });
 
 
 // submitting the form event.
@@ -90,7 +98,26 @@ form.addEventListener('submit',function(event){
     let Phone = document.getElementById("phone").value
     console.log(Phone);
 
-    // form.reset();
+    form.reset();
 
+
+
+    const submit= document.querySelector("card");
+    submit.addEventListener("click", myFunction);
+    function myFunction(e) {
+    e.preventDefault();
+        fetch("http://localhost:3000/houses/2 ", {
+            method: "PATCH",
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify({
+                "price": "7525000"
+            })
+        })
+    }
 })
+});
 
+  //change event
+  function changeText(id) {
+    id.innerHTML = "Realtor properties!";
+    }

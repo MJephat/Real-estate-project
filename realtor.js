@@ -1,4 +1,4 @@
-
+// pop up notification on submit
 function alertFunction(){
     alert("submitted successfully")
 }
@@ -94,6 +94,3 @@ form.addEventListener('submit',function(event){
 
 })
 
-
-
-// console.log(alertFunction());

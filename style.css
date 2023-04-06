@@ -224,7 +224,7 @@ input[type=text]{
     background:#ccc
   } */
 
-  footer{
+  /* footer{
     background: #111;
     height: auto;
     width: 100vw;
@@ -279,7 +279,83 @@ input[type=text]{
 
 .socials a:hover i{
     color: aqua;
+} */
+
+.row {
+    padding: 1em 1em;
+    background-color:darkgray;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  h4 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color:blue;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+    color: #0b4bb2;
+  }
+  #kujaza,
+  #one{
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #one {
+    background-color: #a4cabd;
+    color: #c34b4b;
+  }
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+  .social i {
+    color: #404944;
 }
+
+.social i:hover{
+    color: rgb(101, 101, 155);
+}
+  
+  
 .footer-bottom{
     background: black;
     width: 100vw;
@@ -299,6 +375,9 @@ input[type=text]{
     font-weight: 200;
     /* color:aliceblue; */
 }
+
+
+
 
 .like_btn{
     background:rgb(117, 117, 181);
@@ -357,3 +436,23 @@ input[type=text]{
 .checked{
     color: orange;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

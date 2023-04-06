@@ -102,20 +102,8 @@ form.addEventListener('submit',function(event){
 
 
 
-    const submit= document.querySelector("card");
-    submit.addEventListener("click", myFunction);
-    function myFunction(e) {
-    e.preventDefault();
-        fetch("http://localhost:3000/houses/2 ", {
-            method: "PATCH",
-            headers: {'Content-type': 'application/json'},
-            body: JSON.stringify({
-                "price": "7525000"
-            })
-        })
-    }
+    })
 })
-});
 
   //change event
   function changeText(id) {

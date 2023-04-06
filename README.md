@@ -29,7 +29,6 @@ iii. save/download imahes for later viewing.
 The entire project was developed by Jephat M.Maina.
 Any contibutors are welcome to contribute. if you would like to contribute to the project please submit a pull request.
 
-link: https://github.com/MJephat/real-estate-project
 
 ### Licence
 This project is licensed under the MIT License. See the LICENSE file for more information.

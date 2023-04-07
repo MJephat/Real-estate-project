@@ -54,17 +54,17 @@ document.addEventListener('DOMContentLoaded', function(){
      // Like button function.
     // grabbing our elements.
     
-    let likeButton = document.getElementsByClassName(".like_btn").textContent 
-    let likeIcon = document.getElementsByClassName(".icon").textContent
-    let likeCount = document.querySelector("#count").textContent;
+    let likeButton = document.getElementsByClassName(".like_btn") 
+    let likeIcon = document.getElementsByClassName(".icon")
+    let likeCount = document.querySelector("#count")
 
     // Heart Like counts
-var clicks = 0;
-function onClick() 
-{
-    clicks += 1;
-    document.querySelector(".card").innerHTML = clicks;
-};
+// var clicks = 0;
+// function onClick() 
+// {
+//     clicks += 1;
+//     document.querySelector(".card").innerHTML = clicks;
+// };
     // button clicked
     // let clicked = false;
     
@@ -105,7 +105,38 @@ form.addEventListener('submit',function(event){
     })
 })
 
-  //change event
+//change event
   function changeText(id) {
     id.innerHTML = "Realtor properties!";
     }
+
+
+// slideshow functionality
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

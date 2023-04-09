@@ -38,11 +38,6 @@ document.addEventListener('DOMContentLoaded', function(){
             <span class="fa fa-star"></span>
             </br>
 
-            <button class="like_btn">
-            <span class="fa fa-heart icon"></i></span>
-            <span id="count">0</span> Like
-            </button>
-
             `
             character.appendChild(card)
 
@@ -54,9 +49,115 @@ document.addEventListener('DOMContentLoaded', function(){
      // Like button function.
     // grabbing our elements.
     
-    let likeButton = document.getElementsByClassName(".like_btn") 
-    let likeIcon = document.getElementsByClassName(".icon")
-    let likeCount = document.querySelector("#count")
+   var likeButton = document.querySelector('.like_btn');
+   var likeCount = document.querySelector('#count');
+    
+   var count = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count++;
+    likeCount.textContent = count;
+    });
+
+    //like for pic 2
+    var likeButton = document.querySelector('.like_btn1');
+    var likeCount1 = document.querySelector('#count1');
+    
+    var count1 = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count1++;
+    likeCount1.textContent = count1
+    });
+
+    //like for pic 3
+    var likeButton = document.querySelector('.like_btn2');
+    var likeCount2 = document.querySelector('#count2');
+    
+    var count2 = 0;
+    
+    likeButton.addEventListener('click', () => {
+      count2++;
+      likeCount2.textContent = count2
+    });
+    
+    //like for pic 4
+    var likeButton = document.querySelector('.like_btn3');
+    var likeCount3 = document.querySelector('#count3');
+    
+    var count3 = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count3++;
+    likeCount3.textContent = count3
+    });
+    
+    // like for pic 5
+    var likeButton = document.querySelector('.like_btn4');
+    var likeCount4 = document.querySelector('#count4');
+    
+    var count4 = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count4++;
+    likeCount4.textContent = count4
+    });
+    
+    // like for pic 6
+    var likeButton = document.querySelector('.like_btn5');
+    var likeCount5 = document.querySelector('#count5');
+    
+    var count5 = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count5++;
+    likeCount5.textContent = count5
+    });
+    
+    // like for pic 7
+    var likeButton = document.querySelector('.like_btn6');
+    var likeCount6 = document.querySelector('#count6');
+    
+    var count6 = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count6++;
+    likeCount6.textContent = count6
+    });
+    
+    // like for pic 8
+    var likeButton = document.querySelector('.like_btn7');
+    var likeCount7 = document.querySelector('#count7');
+    
+    var count7 = 0;
+    
+    likeButton.addEventListener('click', () => {
+    count7++;
+    likeCount7.textContent = count7
+    });
+    
+    // like for pic 9
+    var likeButton = document.querySelector('.like_btn8');
+    var likeCount8 = document.querySelector('#count8');
+    
+    var count8 = 0;
+    
+    likeButton.addEventListener('click', () => {
+      count8++;
+      likeCount8.textContent = count8
+    });
+    
+    // like for pic 10
+    // var likeButton = document.querySelector('.like_btn9');
+    // var likeCount9 = document.querySelector('#count9');
+    
+    // var count9 = 0;
+    
+    // likeButton.addEventListener('click', () => {
+    //   count9++;
+    //   likeCount9.textContent = count9
+    // });
+    
 
     // Heart Like counts
 // var clicks = 0;
@@ -132,3 +233,19 @@ form.addEventListener('submit',function(event){
     })
  })
 
+// filter function
+fetch("http://localhost:3000/houses",)
+    .then(res => res.json())
+    .then(data => {
+        const Data = data
+        const filHome = document.querySelector("#hom");
+
+        filHome.addEventListener("click", () =>{
+        const filtered = Data.filter(function(houses){
+            return houses.price >= 4500000
+        })
+        console.log(filtered);
+        }
+        )
+    })
+        

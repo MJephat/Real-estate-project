@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+
+<!-- navahation bar -->
+<div id="home"></div>
+    <div class="nav">
+    <nav>
+         <ul >
+            <img src="images/logo.png" alt="Real estate" style ="height:55px; width:55px" ></img>
+           <li><a  href="#footer"><i class="fa fa-briefcase"></i>about us</a></li>
+            <li><a  href="#property"><i class="fa fa-building"></i>property</a></li>
+            <li><a  href="#home"><i class="fa fa-home"></i>Home</a></li>
+          
+
+        </ul>
+    </nav>
+    </div>
+
+    
+<div class = "Home">
+  <div class="land">
+  <h5>Gift yourself a House</h5>
+  <p>make a home out of a house and that is where your heart will be.</p>
+  
+ 
+ </div>
+</div>
+
+
+
+<!-- middle section for about the website -->
+  <div><h4 onclick="changeText(this)" style="color: black; text-align: center;">welcome!! own a property</style></h5></div>
+  
+<div class="com">
+
+<div class="card" id="info"> 
+    <h3>Our committment</h3>
+    <p>At our real estate firm, our commitment is to provide our clients with 
+        exceptional service and expertise to ensure a successful real estate transaction.
+         .</p> 
+    </div>
+
+<div class="card" id="info"> 
+    <h3>Our service</h3>
+    
+    <p> we offer a comprehensive range of services designed to help 
+        our clients achieve their real estate goals. From buying and selling properties to 
+        property management and investment services
+       </p>
+</div>
+
+<div class="card" id="info"> 
+    <h3></i>About us</h3>
+   
+
+    <p> At our company, we have a team of experienced and knowledgeable real 
+        estate agents who are dedicated to helping clients achieve their goals. 
+        we believe that our commitment to excellence sets us apart in the industry. 
+
+    </p>
+</div>
+
+<!-- real agent form -->
+<div class="card" id="info"> 
+  <h5>Realtor Agent Form</h5>
+	<form id="weka" onsubmit="alertFunction()">
+		<label>Name: <input type="text" id="name" required></label><br>
+		<label>Email: <input type="email" id="email" required></label><br>
+		<label>Phone: <input type="number" id="phone" required></label><br>
+		<label>Property Type: 
+			<select name="property-type">
+				<option value="house">House</option>
+				<option value="condo">Condo</option>
+				<option value="bungalow">bungalow</option>
+        <option value="beachhouse">beachhouse</option>
+			</select>
+		</label><br>
+		<input type="submit" value="Submit" name="submit" style="background-color: rgb(137, 140, 188);">
+	</form>
+
+</div>
+    
+</div>
+
+<!-- spacing -->
+<div>
+    <p> </p><br></p>
+</div>
+
+<!-- slide show  division -->
+<div class="product">
+    <div class="product-category"></div>
+    <button class="pre-btn"><img src="images/arrow.png"style="height:40px;" alt=""></button>
+    <button class="nxt-btn"><img src="images/arrow.png"style="height:40px;" alt=""></button>
+
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/grit.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">best to own</p>
+                <span class="price">4.2m</span><span
+                class="actual-price">4.31m</span>
+
+                 <button class="like_btn">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count">0</span> Like
+                    </button>
+                
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/holly.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">simple classy house</p>
+                <span class="price">2.5m</span><span
+                class="actual-price">3.31m</span>
+
+                <button class="like_btn1">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count1">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/curio.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">curio house</p>
+                <span class="price">3.47m</span><span
+                class="actual-price">3.52m</span>
+
+                <button class="like_btn2">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count2">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/house 1.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">Mordern hideAway</p>
+                <span class="price">7.0m</span><span
+                class="actual-price">7.24m</span>
+
+                <button class="like_btn3">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count3">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/house 2.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">humble home</p>
+                <span class="price">2.8m</span><span
+                class="actual-price">3.11m</span>
+
+                <button class="like_btn4">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count4">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/house7.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">Cool backyard</p>
+                <span class="price">5.8m</span><span
+                class="actual-price">6.31m</span>
+
+                <button class="like_btn5">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count5">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/suburb.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">suburb home</p>
+                <span class="price">7.02m</span><span
+                class="actual-price">7.5m</span>
+
+                <button class="like_btn6">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count6">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/baily.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">serene House</p>
+                <span class="price">6.8m</span><span
+                class="actual-price">7.1m</span>
+
+                <button class="like_btn7">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count7">0</span> Like
+                    </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">12% off</span>
+                <img src="images/kitchen.jpg" style="height: 400px;width: 400px;"class="product thumb"alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class ="product-brand">realtor</h2>
+                <p class="product-short-description">best to own</p>
+                <span class="price">4.2m</span><span
+                class="actual-price">4.31m</span>
+
+                <button class="like_btn8">
+                    <span class="fa fa-heart icon"></i></span>
+                    <span id="count8">0</span> Like
+                    </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- spacing -->
+<div>
+    <p> </p><br></p>
+</div>
+
+<!-- js file displaying div -->
+<div id="property">
+    <div class="box">
+        
+        <h2> RELATED HOUSES</h2>
+        <div class="filter-pro">
+          <div class="left-pro">
+            <button id="vacation">vacation</button>
+            <button id="onsale">on sale</button>
+            <button id="hom">home</button>
+          </div>
+      
+          <!-- filter icon button -->
+        <div class="right-pro">
+          <button id="filter"><i class="fa fa-filter"></i></button>
+        </div>
+
+        </div>
+        </div>
+        
+    </div>
+
+    <!-- spacing -->
+<div>
+     <p> </p><br></p>
+ </div>
+
+<!-- footer div -->
+   <footer id="footer">
+   <div class="row primary">
+        <div class="column about">
+            <h4>Connect</h4>
+            <p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>   victoria plaza, Parkland Road, Nairobi
+            </p>
+            <div class="social">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-twitter-square"></i>
+                <i class="fa fa-linkedin-square"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    
+        <div class="columnlink">
+            <h6>Links</h6>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    
+        <div class="column subscribe">
+            <h4>Newsletter</h4>
+            <div>
+               <input type="email" id="kujaza" placeholder="Your email id here" />
+               <button id="one">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    
+  <!-- <div class=" footer-bottom"> -->
+    <div class="footer-bottom">
+    
+       <p>copyright & copy;2023 realtor. designed by <span>Jephat M</span></p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

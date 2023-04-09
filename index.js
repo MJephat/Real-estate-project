@@ -6,7 +6,7 @@ function alertFunction(){
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    fetch("http://localhost:3000/houses",)
+    fetch("db.json",)
     .then(res => res.json())
     .then(data => {
         
@@ -234,7 +234,7 @@ form.addEventListener('submit',function(event){
  })
 
 // filter function
-fetch("http://localhost:3000/houses",)
+fetch("db.json",)
     .then(res => res.json())
     .then(data => {
         const Data = data

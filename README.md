@@ -25,7 +25,7 @@ iii. save/download imahes for later viewing.
 ### Usage
 1. navagate to the app in your browser:`http://localhost:3000`
 2. view property detail and like the properties you please.
-
+3. live link: https://mjephat.github.io/real-estate-project/
 ## Contributors
 The entire project was developed by Jephat M.Maina.
 Any contibutors are welcome to contribute. if you would like to contribute to the project please submit a pull request.

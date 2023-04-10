@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     .then(data => {
         
         const  character = document.querySelector(".box")
+        
 
         for(let i = 0; i < data.length; i++) {
             // console.log(data[i]);
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
 
     })
+
 
 
      // Like button function.
@@ -168,14 +170,14 @@ form.addEventListener('submit',function(event){
     })
 })
 
-//change event
+//change event function
   function changeText(id) {
     id.innerHTML = "Realtor properties!";
     }
 
 
 
-// slideshow
+// slideshow function .
 
  const productContainers = [...document.querySelectorAll(".product-container")];
 

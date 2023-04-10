@@ -6,7 +6,7 @@ function alertFunction(){
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    fetch("db.json",)
+    fetch("http://localhost:3000/houses",)
     .then(res => res.json())
     .then(data => {
         
@@ -147,44 +147,6 @@ document.addEventListener('DOMContentLoaded', function(){
       likeCount8.textContent = count8
     });
     
-    // like for pic 10
-    // var likeButton = document.querySelector('.like_btn9');
-    // var likeCount9 = document.querySelector('#count9');
-    
-    // var count9 = 0;
-    
-    // likeButton.addEventListener('click', () => {
-    //   count9++;
-    //   likeCount9.textContent = count9
-    // });
-    
-
-    // Heart Like counts
-// var clicks = 0;
-// function onClick() 
-// {
-//     clicks += 1;
-//     document.querySelector(".card").innerHTML = clicks;
-// };
-    // button clicked
-    // let clicked = false;
-    
-    // likeButton.addEventListener("click", ()=>{
-        
-    //     console.log("like button clicked");
-    //     if (!clicked){
-    //         clicked =true;
-    //         likeIcon.innerHTML = `<i class="fa fa-heart"></i>`;
-    //         likeCount.textContent+=1;
-    //     }
-    //     else{
-    //         clicked = false;
-    //         likeIcon.innerHTML =`<i class="fa fa-heart"></i>`
-    //         likeCount.textContent+=1;
-    //     }
-    //    })
-    // });
-
 
 // submitting the form event.
 let form = document.getElementById("weka")
@@ -234,7 +196,7 @@ form.addEventListener('submit',function(event){
  })
 
 // filter function
-fetch("db.json",)
+fetch("http://localhost:3000/houses",)
     .then(res => res.json())
     .then(data => {
         const Data = data
@@ -242,7 +204,8 @@ fetch("db.json",)
 
         filHome.addEventListener("click", () =>{
         const filtered = Data.filter(function(houses){
-            return houses.price >= 4500000
+            return houses.address == "Kitengela, kajiado"
+            
         })
         console.log(filtered);
         }

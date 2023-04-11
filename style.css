@@ -486,6 +486,12 @@ input[type=text]{
     /* color:aliceblue; */
 }
 
+#filterInput{
+  background-color: rgb(236, 227, 227);
+  font-weight: 800;
+  width: 150%; 
+  }
+
 .like_btn,
 .like_btn1,
 .like_btn2,
